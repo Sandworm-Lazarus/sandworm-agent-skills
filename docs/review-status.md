@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Methodology](methodology.md)
 
-Snapshot: **2026-11-11** · `2026-11-11-sandworm-agent-skills`
+Snapshot: **2026-11-11** · `2026-11-11-mcp-typescript-privacy-sandworm-agent-skills`
 
 | Measure | Count |
 | --- | ---: |
