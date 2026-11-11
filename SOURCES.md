@@ -2,7 +2,7 @@
 
 [Home](README.md) · [Skill catalog](CATALOG.md) · [Reuse notes](docs/attribution.md)
 
-Snapshot: **2026-11-11**. The 23 sources include skill collections, tools and frameworks. License descriptions apply to the inspected snapshot and scope; follow the linked texts before reuse.
+Snapshot: **2026-11-11**. The 26 sources include skill collections, tools and frameworks. License descriptions apply to the inspected snapshot and scope; follow the linked texts before reuse.
 
 Generated from `catalog/arsenal.json` with `python3 scripts/arsenal.py render`.
 
@@ -31,6 +31,9 @@ Generated from `catalog/arsenal.json` with `python3 scripts/arsenal.py render`.
 | [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) · [caff2b48](https://github.com/pipecat-ai/pipecat/tree/caff2b489bfbee73be0f75e9de7601490205873d) | [BSD-2-Clause](https://github.com/pipecat-ai/pipecat/blob/caff2b489bfbee73be0f75e9de7601490205873d/LICENSE) | ต่อ APIs ได้โดยไม่ host ทุกโมเดลเอง; วัด end-to-end latency แยกจากแต่ละ service |
 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) · [3ec025c4](https://github.com/SYSTRAN/faster-whisper/tree/3ec025c4b7526e3fa121e527724ac43afa275a95) | [MIT](https://github.com/SYSTRAN/faster-whisper/blob/3ec025c4b7526e3fa121e527724ac43afa275a95/LICENSE) | Benchmark ใน README ผูก hardware/config; ต้องวัดคำผิดและ latency กับเสียงไทยจริง |
 | [QwenAudio/CosyVoice](https://github.com/QwenAudio/CosyVoice) · [074ca6dc](https://github.com/QwenAudio/CosyVoice/tree/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc) | [Apache-2.0](https://github.com/QwenAudio/CosyVoice/blob/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/LICENSE) | ย้ายจาก FunAudioLLM ไป QwenAudio; รายชื่อภาษาใน README ที่อ่านไม่ได้ยืนยันภาษาไทย |
+| [modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector) · [4d3464cb](https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23) | [Apache-2.0 transition; retained MIT contributions; docs CC-BY-4.0](https://github.com/modelcontextprotocol/inspector/blob/4d3464cb3a6dde609d7b5ac24c440b947eb40f23/LICENSE) | เครื่องมืออาจเก็บ OAuth/env secrets; ตรวจ keychain หรือ encrypted storage เมื่อใช้ headless/VPS |
+| [mastra-ai/mastra](https://github.com/mastra-ai/mastra) · [59a60e42](https://github.com/mastra-ai/mastra/tree/59a60e42d5985980d1a36cf0bcddeead09283703) | [Apache-2.0 outside ee directories; separate enterprise terms](https://github.com/mastra-ai/mastra/blob/59a60e42d5985980d1a36cf0bcddeead09283703/LICENSE.md) | Apache core แยก ee directories; ทดลอง suspend/resume และ retry ด้วย task สังเคราะห์ |
+| [vercel/ai](https://github.com/vercel/ai) · [70e45d58](https://github.com/vercel/ai/tree/70e45d5878494be4b66e325187f865951025059e) | [Apache-2.0](https://github.com/vercel/ai/blob/70e45d5878494be4b66e325187f865951025059e/LICENSE) | String model ID อาจเลือก Vercel AI Gateway; adapter โดยตรงเป็นอีกเส้นทาง ต้องบันทึก provider/billing route |
 
 ## Supporting files read in the initial focused review
 

@@ -8,9 +8,9 @@ Snapshot: **2026-11-11** · `2026-11-11-sandworm-agent-skills`
 | --- | ---: |
 | Skill entries | 13 |
 | Skill collections | 8 |
-| Companion tools | 15 |
-| Tool categories | 5 |
-| Source repositories | 23 |
+| Companion tools | 18 |
+| Tool categories | 7 |
+| Source repositories | 26 |
 | Entry-reviewed | 8 |
 | Entry-overview | 5 |
 | Runtime-tested upstream skills | 0 |

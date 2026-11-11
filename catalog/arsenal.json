@@ -1,7 +1,7 @@
 {
   "as_of": "2026-11-11",
   "timezone": "Asia/Bangkok",
-  "scope": "Focused collection: 13 skill entries and 15 tools. Original review levels retained. No upstream runtime testing.",
+  "scope": "Focused collection: 13 skill entries and 18 tools. Original review levels retained. No upstream runtime testing.",
   "sources": [
     {
       "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
@@ -412,6 +412,54 @@
       "category": "Voice & audio",
       "note": "ย้ายจาก FunAudioLLM ไป QwenAudio; รายชื่อภาษาใน README ที่อ่านไม่ได้ยืนยันภาษาไทย",
       "recommendation": "README overview; not runtime-tested"
+    },
+    {
+      "repo": "modelcontextprotocol/inspector",
+      "url": "https://github.com/modelcontextprotocol/inspector",
+      "commit": "4d3464cb3a6dde609d7b5ac24c440b947eb40f23",
+      "kind": "tool",
+      "archived": false,
+      "fork": false,
+      "license_url": "https://github.com/modelcontextprotocol/inspector/blob/4d3464cb3a6dde609d7b5ac24c440b947eb40f23/LICENSE",
+      "license_blob_sha": "4a93985763241755401a10678395303de4e720ba",
+      "readme_url": "https://github.com/modelcontextprotocol/inspector/blob/4d3464cb3a6dde609d7b5ac24c440b947eb40f23/README.md",
+      "readme_blob_sha": "7f5c529411172c33889e678496ed8bb1463c1a3a",
+      "license": "Apache-2.0 transition; retained MIT contributions; docs CC-BY-4.0",
+      "category": "MCP development",
+      "note": "เครื่องมืออาจเก็บ OAuth/env secrets; ตรวจ keychain หรือ encrypted storage เมื่อใช้ headless/VPS",
+      "recommendation": "README/license overview; not runtime-tested"
+    },
+    {
+      "repo": "mastra-ai/mastra",
+      "url": "https://github.com/mastra-ai/mastra",
+      "commit": "59a60e42d5985980d1a36cf0bcddeead09283703",
+      "kind": "tool",
+      "archived": false,
+      "fork": false,
+      "license_url": "https://github.com/mastra-ai/mastra/blob/59a60e42d5985980d1a36cf0bcddeead09283703/LICENSE.md",
+      "license_blob_sha": "e1b6e4b6455a882dbbf66ee0b13101ec584d5e63",
+      "readme_url": "https://github.com/mastra-ai/mastra/blob/59a60e42d5985980d1a36cf0bcddeead09283703/README.md",
+      "readme_blob_sha": "f6465bcaf53f737e3754c28660e142ca44e07c97",
+      "license": "Apache-2.0 outside ee directories; separate enterprise terms",
+      "category": "Agent frameworks",
+      "note": "Apache core แยก ee directories; ทดลอง suspend/resume และ retry ด้วย task สังเคราะห์",
+      "recommendation": "README/license overview; not runtime-tested"
+    },
+    {
+      "repo": "vercel/ai",
+      "url": "https://github.com/vercel/ai",
+      "commit": "70e45d5878494be4b66e325187f865951025059e",
+      "kind": "tool",
+      "archived": false,
+      "fork": false,
+      "license_url": "https://github.com/vercel/ai/blob/70e45d5878494be4b66e325187f865951025059e/LICENSE",
+      "license_blob_sha": "6c16c29f41168411dbf6e3ba3a063ce789c27334",
+      "readme_url": "https://github.com/vercel/ai/blob/70e45d5878494be4b66e325187f865951025059e/packages/ai/README.md",
+      "readme_blob_sha": "456d3853992ce379bda7e16d04612f0c506041b9",
+      "license": "Apache-2.0",
+      "category": "AI application SDKs",
+      "note": "String model ID อาจเลือก Vercel AI Gateway; adapter โดยตรงเป็นอีกเส้นทาง ต้องบันทึก provider/billing route",
+      "recommendation": "README/license overview; not runtime-tested"
     }
   ],
   "skills": [
@@ -888,12 +936,48 @@
       "runtime_tested": false,
       "review_level": "readme-overview",
       "reviewed_at": "2026-11-11"
+    },
+    {
+      "repo": "modelcontextprotocol/inspector",
+      "name": "MCP Inspector",
+      "group": "MCP development",
+      "purpose": "ตรวจและเรียก MCP servers ผ่าน web, CLI หรือ terminal interface",
+      "requires": "Node runtime ตาม engine ของ revision, MCP server/config และ connection credentials",
+      "note": "เครื่องมืออาจเก็บ OAuth/env secrets; ตรวจ keychain หรือ encrypted storage เมื่อใช้ headless/VPS",
+      "url": "https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23",
+      "runtime_tested": false,
+      "review_level": "readme-overview",
+      "reviewed_at": "2026-11-11"
+    },
+    {
+      "repo": "mastra-ai/mastra",
+      "name": "Mastra",
+      "group": "Agent frameworks",
+      "purpose": "สร้าง Agents, graph workflows, memory และ MCP integrations บน TypeScript",
+      "requires": "Node/TypeScript, provider credentials และ storage ตาม feature",
+      "note": "Apache core แยก ee directories; ทดลอง suspend/resume และ retry ด้วย task สังเคราะห์",
+      "url": "https://github.com/mastra-ai/mastra/tree/59a60e42d5985980d1a36cf0bcddeead09283703",
+      "runtime_tested": false,
+      "review_level": "readme-overview",
+      "reviewed_at": "2026-11-11"
+    },
+    {
+      "repo": "vercel/ai",
+      "name": "Vercel AI SDK",
+      "group": "AI application SDKs",
+      "purpose": "ต่อ text/streaming, structured outputs, tools และ UI สำหรับแอป TypeScript",
+      "requires": "Node 22+ ตาม README ที่อ่าน, provider adapter หรือ gateway และ UI integration ตามงาน",
+      "note": "String model ID อาจเลือก Vercel AI Gateway; adapter โดยตรงเป็นอีกเส้นทาง ต้องบันทึก provider/billing route",
+      "url": "https://github.com/vercel/ai/tree/70e45d5878494be4b66e325187f865951025059e",
+      "runtime_tested": false,
+      "review_level": "readme-overview",
+      "reviewed_at": "2026-11-11"
     }
   ],
   "snapshot": "2026-11-11-sandworm-agent-skills",
   "collection": {
     "name": "sandworm-agent-skills",
     "hub": "https://github.com/Sandworm-Lazarus/sandworm-arsenal",
-    "source_snapshot": "2026-11-11-ai-toolbox"
+    "source_snapshot": "2026-11-11-mcp-typescript-privacy"
   }
 }

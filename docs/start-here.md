@@ -12,6 +12,7 @@ Select a task, inspect the complete pinned package, then try a bounded synthetic
 | [Pydantic AI](https://github.com/pydantic/pydantic-ai/tree/f5c460d46ad9d03200371751d3d89f3ea58433de) | สร้าง typed Agents, tool calls และ structured outputs ใน Python | Version, configuration, one task result, failure behavior and data/permission boundaries |
 | [Agno](https://github.com/agno-agi/agno/tree/0b88f303e1ebd58a92677652fdeaddd7e7618362) | สร้าง Agent teams/workflows และให้บริการผ่าน API/MCP ด้วย AgentOS | Version, configuration, one task result, failure behavior and data/permission boundaries |
 | [CrewAI](https://github.com/crewAIInc/crewAI/tree/4254a835b1e5433d123e201928612bc692edbc3e) | จัด role-based agent collaboration และ event-driven Flows | Version, configuration, one task result, failure behavior and data/permission boundaries |
+| [Mastra](https://github.com/mastra-ai/mastra/tree/59a60e42d5985980d1a36cf0bcddeead09283703) | สร้าง Agents, graph workflows, memory และ MCP integrations บน TypeScript | Version, configuration, one task result, failure behavior and data/permission boundaries |
 
 ## Preserve useful context
 
@@ -37,6 +38,13 @@ Select a task, inspect the complete pinned package, then try a bounded synthetic
 | [LiveKit Agents](https://github.com/livekit/agents/tree/065deca6364096ce0cb79fd41dc1d3e53c64850e) | สร้าง real-time voice/video Agents ที่เชื่อม STT, LLM และ TTS | Version, configuration, one task result, failure behavior and data/permission boundaries |
 | [Pipecat](https://github.com/pipecat-ai/pipecat/tree/caff2b489bfbee73be0f75e9de7601490205873d) | ประกอบ streaming voice/multimodal pipelines และ conversation flows | Version, configuration, one task result, failure behavior and data/permission boundaries |
 | [faster-whisper](https://github.com/SYSTRAN/faster-whisper/tree/3ec025c4b7526e3fa121e527724ac43afa275a95) | ถอดเสียงด้วย Whisper ผ่าน CTranslate2 บน CPU/GPU | Version, configuration, one task result, failure behavior and data/permission boundaries |
+
+## Inspect MCP and TypeScript apps
+
+| Project | ใช้ทำอะไร | Evidence to collect |
+| --- | --- | --- |
+| [MCP Inspector](https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23) | ตรวจและเรียก MCP servers ผ่าน web, CLI หรือ terminal interface | Version, configuration, one task result, failure behavior and data/permission boundaries |
+| [Vercel AI SDK](https://github.com/vercel/ai/tree/70e45d5878494be4b66e325187f865951025059e) | ต่อ text/streaming, structured outputs, tools และ UI สำหรับแอป TypeScript | Version, configuration, one task result, failure behavior and data/permission boundaries |
 
 ## Skill starting points
 

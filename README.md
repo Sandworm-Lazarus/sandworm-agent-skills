@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/banner.svg" alt="Sandworm Agent Skills" width="100%"></p>
 
-<p align="center"><b>13 skill entries · 15 tools · 23 source repositories</b></p>
+<p align="center"><b>13 skill entries · 18 tools · 26 source repositories</b></p>
 
 # Sandworm Agent Skills
 
@@ -19,10 +19,12 @@ Focused agent workflows for context, memory, tool design, orchestration, browser
 | Tool category | Projects |
 | --- | ---: |
 | Personal agents | 2 |
-| Agent frameworks | 4 |
+| Agent frameworks | 5 |
 | Agent memory | 2 |
 | Browser automation | 3 |
 | Voice & audio | 4 |
+| MCP development | 1 |
+| AI application SDKs | 1 |
 
 ## Use the collection
 
