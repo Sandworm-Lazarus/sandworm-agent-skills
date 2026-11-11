@@ -10,6 +10,15 @@
 
 คลังนี้มีสกิล 13 entries และเครื่องมือ 18 ตัว พร้อมลิงก์ที่ตรึง commit และคำอธิบายการใช้งาน อ่าน [เส้นทางเริ่มต้น](docs/start-here.md) เพื่อเลือกตามโจทย์
 
+## เครื่องมือที่พัฒนาเอง: Tool Policy Gate
+
+ตรวจสิทธิ์ principal/action/resource ตาม allowlist และเวลาหมดอายุ [Guide](docs/original-tool.md) · [Original work](ORIGINAL_WORK.md).
+
+```bash
+python3 scripts/tool_policy.py --policy examples/policy.json --request examples/request-allow.json --now 2030-01-01T00:00:00Z
+python3 -m unittest discover -s tests -v
+```
+
 ## ค้นหาและตรวจข้อมูล
 
 ใช้ Python 3.9+ โดยไม่ต้องติดตั้ง dependencies เพิ่ม
