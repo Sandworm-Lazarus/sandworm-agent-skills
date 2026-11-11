@@ -1,0 +1,27 @@
+# Skill catalog
+
+[Home](README.md) · [ภาษาไทย](README.th.md) · [Sources](SOURCES.md)
+
+Snapshot: **2026-11-11** · **13 selected entries**.
+
+Thai editorial summaries with pinned entry links. **Entry** means the entry was read in the initial focused review; **Overview** means frontmatter and an opening excerpt were inspected, not the complete bundle. Neither status means runtime-tested.
+
+Generated from `catalog/arsenal.json` with `python3 scripts/arsenal.py render`.
+
+## Agent / Context
+
+| Skill / source | ใช้ทำอะไร | Review | ต้องมี / หมายเหตุ |
+| --- | --- | --- | --- |
+| **#34** [context-compression](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/context-compression/SKILL.md) · `muratcankoylan/Agent-Skills-for-Context-Engineering` | ออกแบบสรุปบริบทที่รักษา decision, files และงานค้าง | Entry | session history และรูปแบบ handoff. เหมาะงานรีเสิร์ช/โค้ดยาวที่ต้องทำต่อหลายรอบ |
+| **#35** [memory-systems](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/memory-systems/SKILL.md) · `muratcankoylan/Agent-Skills-for-Context-Engineering` | ออกแบบความจำข้าม session, entity/time validity และ retrieval | Entry | memory store และกติกาการลบ/อัปเดต. แยก persistent memory ออกจาก scratchpad และ summary |
+| **#36** [tool-design](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/blob/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/tool-design/SKILL.md) · `muratcankoylan/Agent-Skills-for-Context-Engineering` | ออกแบบชื่อ schema, result และ error ของ tool ให้ Agent ใช้ถูก | Entry | API/tool interfaces ที่ต้องออกแบบ. เหมาะทำ connector หรือ MCP ของ โครงการของคุณ |
+| **#38** [langgraph-human-in-the-loop](https://github.com/langchain-ai/langchain-skills/blob/126c384d8552dcb476b226c244172186cc3f4328/config/skills/langgraph-human-in-the-loop/SKILL.md) · `langchain-ai/langchain-skills` | วาง interrupt/resume และ workflow ที่รับการตัดสินใจจากคน | Entry | LangGraph และ persistence/checkpointer. เหมาะจุดที่ Agent ต้องขอการตัดสินใจเฉพาะเรื่อง |
+| **#39** [deep-agents-memory](https://github.com/langchain-ai/langchain-skills/blob/126c384d8552dcb476b226c244172186cc3f4328/config/skills/deep-agents-memory/SKILL.md) · `langchain-ai/langchain-skills` | เลือก backend ความจำชั่วคราว ถาวร และเส้นทางไฟล์แบบผสม | Entry | Deep Agents และ backend/store ที่เลือก. ต้องทดสอบความหมายของ thread/session และสิทธิ์ filesystem |
+| **#45** [mcp-builder](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/mcp-builder/SKILL.md) · `anthropics/skills` | ออกแบบ MCP server และเครื่องมือที่ต่อกับ API ภายนอก | Entry | Python FastMCP หรือ Node/TypeScript MCP SDK. license ของโฟลเดอร์ที่อ่านเป็น Apache-2.0 |
+| **#49** [agent-run-forensics](https://github.com/alirezarezvani/claude-skills/blob/9ca476d8401f8750f92f4a7b31ec68efaa61ab02/engineering/agent-run-forensics/skills/agent-run-forensics/SKILL.md) · `alirezarezvani/claude-skills` | เทียบสิ่งที่ Agent อ้างกับ transcript, timeline และ typed claims | Entry | session transcripts และ Python helper CLIs. อ่าน claim_checker.py และ hook; ต้องตรวจ format ของ client รุ่นที่ใช้ |
+| **#50** [agent-framework-azure-ai-py](https://github.com/microsoft/skills/blob/9287b443662d2433c85621c7325ee72a0ce499b5/.github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py/SKILL.md) · `microsoft/skills` | สร้าง hosted agents, thread, tools และ streaming บน Azure | Entry | Azure resources, credentials และ Python SDK. เหมาะถ้าเลือก Azure; ไม่จำเป็นสำหรับ Agent ที่เรียก API ทั่วไป |
+| **#58** [agents-sdk](https://github.com/cloudflare/skills/blob/cbf893b954222276bf1af57e5f23379231e0efb9/skills/agents-sdk/SKILL.md) · `cloudflare/skills` | สร้างและตรวจ Agent ที่มี state, scheduling, RPC และ WebSocket บน Workers | Overview | Cloudflare project, runtime/config และสิทธิ์บริการตามงาน. ตรวจบัญชี target และ local/remote resource ก่อนคำสั่งที่เปลี่ยนข้อมูล |
+| **#83** [agent-architecture](https://github.com/github/awesome-copilot/blob/eaaffd5d020b756a2777a4b1b161d2bdc126d9a0/skills/agent-architecture/SKILL.md) · `github/awesome-copilot` | ออกแบบหรือวิเคราะห์ architecture ของ Agent จาก requirements และ failure cases | Overview | Source/config และเครื่องมือที่ entry อ้างถึง. Community-contributed; การอยู่ใน GitHub org ไม่ใช่การรับรองราย entry |
+| **#84** [agent-supply-chain](https://github.com/github/awesome-copilot/blob/eaaffd5d020b756a2777a4b1b161d2bdc126d9a0/skills/agent-supply-chain/SKILL.md) · `github/awesome-copilot` | สร้างและตรวจ integrity manifest ของ plugin และ dependency ที่ตรึงรุ่น | Overview | Source/config และเครื่องมือที่ entry อ้างถึง. Community-contributed; การอยู่ใน GitHub org ไม่ใช่การรับรองราย entry |
+| **#85** [agentic-eval](https://github.com/github/awesome-copilot/blob/eaaffd5d020b756a2777a4b1b161d2bdc126d9a0/skills/agentic-eval/SKILL.md) · `github/awesome-copilot` | ออกแบบ evaluator, rubric และรอบปรับคำตอบของ Agent | Overview | Source/config และเครื่องมือที่ entry อ้างถึง. Reflection/LLM judge ต้องมี independent acceptance criteria; loop ไม่รับรองความถูกต้อง |
+| **#160** [build-chatgpt-app](https://github.com/openai/plugins/blob/d420d13051bffe4543ed39e30fa46b87148e47dd/plugins/openai-developers/skills/build-chatgpt-app/SKILL.md) · `openai/plugins` | สร้าง ChatGPT Apps SDK app ที่มี MCP server และ widget UI | Overview | Apps SDK, MCP server/widget tools และ current docs. ไฟล์นี้มี Apache-2.0 รายโฟลเดอร์; bundle อื่นต้องตรวจสิทธิ์แยก |
