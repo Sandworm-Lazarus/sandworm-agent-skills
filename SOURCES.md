@@ -2,7 +2,7 @@
 
 [Home](README.md) · [Skill catalog](CATALOG.md) · [Reuse notes](docs/attribution.md)
 
-Snapshot: **2026-11-11**. The 26 sources include skill collections, tools and frameworks. License descriptions apply to the inspected snapshot and scope; follow the linked texts before reuse.
+Snapshot: **2026-11-16**. The 28 sources include skill collections, tools and frameworks. License descriptions apply to the inspected snapshot and scope; follow the linked texts before reuse.
 
 Generated from `catalog/arsenal.json` with `python3 scripts/arsenal.py render`.
 
@@ -34,6 +34,8 @@ Generated from `catalog/arsenal.json` with `python3 scripts/arsenal.py render`.
 | [modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector) · [4d3464cb](https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23) | [Apache-2.0 transition; retained MIT contributions; docs CC-BY-4.0](https://github.com/modelcontextprotocol/inspector/blob/4d3464cb3a6dde609d7b5ac24c440b947eb40f23/LICENSE) | เครื่องมืออาจเก็บ OAuth/env secrets; ตรวจ keychain หรือ encrypted storage เมื่อใช้ headless/VPS |
 | [mastra-ai/mastra](https://github.com/mastra-ai/mastra) · [59a60e42](https://github.com/mastra-ai/mastra/tree/59a60e42d5985980d1a36cf0bcddeead09283703) | [Apache-2.0 outside ee directories; separate enterprise terms](https://github.com/mastra-ai/mastra/blob/59a60e42d5985980d1a36cf0bcddeead09283703/LICENSE.md) | Apache core แยก ee directories; ทดลอง suspend/resume และ retry ด้วย task สังเคราะห์ |
 | [vercel/ai](https://github.com/vercel/ai) · [70e45d58](https://github.com/vercel/ai/tree/70e45d5878494be4b66e325187f865951025059e) | [Apache-2.0](https://github.com/vercel/ai/blob/70e45d5878494be4b66e325187f865951025059e/LICENSE) | String model ID อาจเลือก Vercel AI Gateway; adapter โดยตรงเป็นอีกเส้นทาง ต้องบันทึก provider/billing route |
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) · [8bb6096b](https://github.com/rtk-ai/rtk/tree/8bb6096b773546547d7704f9a8683ea9719a5017) | [Apache-2.0 for OSS filters/hooks; engine and proxy BUSL-1.1](https://github.com/rtk-ai/rtk/blob/8bb6096b773546547d7704f9a8683ea9719a5017/LICENSE) | เลือก rtk-oss (Apache-2.0); default engine และ proxy เป็น BUSL-1.1 แยก อย่าเหมารวม license ทั้ง repo; bytes/4 เป็นค่าประมาณ output ไม่ใช่ค่า API ทั้งงาน มี raw bypass/recall แต่ยังไม่ทดสอบ |
+| [atlassian-labs/mcp-compressor](https://github.com/atlassian-labs/mcp-compressor) · [53e746d1](https://github.com/atlassian-labs/mcp-compressor/tree/53e746d1e24c71328526c5c813559fc0557dd282) | [Apache-2.0](https://github.com/atlassian-labs/mcp-compressor/blob/53e746d1e24c71328526c5c813559fc0557dd282/LICENSE) | backend ต้องรองรับ legacy initialize; catalog คงที่ต่อ connection ไม่รองรับ dynamic subscriptions; schema lookup อาจเพิ่ม calls; output cache/raw recall ต้องคงขอบเขตสิทธิ์เดิม ยังไม่ทดสอบ integration |
 
 ## Supporting files read in the initial focused review
 
@@ -43,3 +45,8 @@ These supporting files are additional evidence, not extra skills.
 - [alirezarezvani/claude-skills / engineering/agent-run-forensics/hooks/hooks.json](https://github.com/alirezarezvani/claude-skills/blob/9ca476d8401f8750f92f4a7b31ec68efaa61ab02/engineering/agent-run-forensics/hooks/hooks.json)
 - [alirezarezvani/claude-skills / engineering/agent-run-forensics/skills/agent-run-forensics/scripts/claim_checker.py](https://github.com/alirezarezvani/claude-skills/blob/9ca476d8401f8750f92f4a7b31ec68efaa61ab02/engineering/agent-run-forensics/skills/agent-run-forensics/scripts/claim_checker.py)
 - [alirezarezvani/claude-skills / engineering/skills/skill-security-auditor/scripts/skill_security_auditor.py](https://github.com/alirezarezvani/claude-skills/blob/9ca476d8401f8750f92f4a7b31ec68efaa61ab02/engineering/skills/skill-security-auditor/scripts/skill_security_auditor.py)
+- [rtk-ai/rtk / engine/LICENSE](https://github.com/rtk-ai/rtk/blob/8bb6096b773546547d7704f9a8683ea9719a5017/engine/LICENSE)
+- [rtk-ai/rtk / proxy/LICENSE](https://github.com/rtk-ai/rtk/blob/8bb6096b773546547d7704f9a8683ea9719a5017/proxy/LICENSE)
+- [rtk-ai/rtk / Cargo.toml](https://github.com/rtk-ai/rtk/blob/8bb6096b773546547d7704f9a8683ea9719a5017/Cargo.toml)
+- [atlassian-labs/mcp-compressor / python/mcp-compressor/pyproject.toml](https://github.com/atlassian-labs/mcp-compressor/blob/53e746d1e24c71328526c5c813559fc0557dd282/python/mcp-compressor/pyproject.toml)
+- [atlassian-labs/mcp-compressor / typescript/package.json](https://github.com/atlassian-labs/mcp-compressor/blob/53e746d1e24c71328526c5c813559fc0557dd282/typescript/package.json)

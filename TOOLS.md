@@ -4,7 +4,7 @@
 
 These are executable tools and frameworks, counted separately from agent skills. Their README/source overviews were inspected; this repository has not installed or run them. Links point to the recorded revision.
 
-**18 tools and frameworks in 7 groups.** See [start here](docs/start-here.md) for task-oriented selections.
+**20 tools and frameworks in 8 groups.** See [start here](docs/start-here.md) for task-oriented selections.
 
 | Group | Tools |
 | --- | ---: |
@@ -13,8 +13,9 @@ These are executable tools and frameworks, counted separately from agent skills.
 | [Agent memory](#agent-memory) | 2 |
 | [Browser automation](#browser-automation) | 3 |
 | [Voice & audio](#voice-audio) | 4 |
-| [MCP development](#mcp-development) | 1 |
+| [MCP development](#mcp-development) | 2 |
 | [AI application SDKs](#ai-application-sdks) | 1 |
+| [Context efficiency](#context-efficiency) | 1 |
 
 <a id="personal-agents"></a>
 
@@ -74,6 +75,7 @@ These are executable tools and frameworks, counted separately from agent skills.
 | Tool | ใช้ทำอะไร | ต้องมี / ข้อจำกัด |
 | --- | --- | --- |
 | [MCP Inspector](https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23) | ตรวจและเรียก MCP servers ผ่าน web, CLI หรือ terminal interface | Node runtime ตาม engine ของ revision, MCP server/config และ connection credentials. เครื่องมืออาจเก็บ OAuth/env secrets; ตรวจ keychain หรือ encrypted storage เมื่อใช้ headless/VPS |
+| [MCP Compressor](https://github.com/atlassian-labs/mcp-compressor/tree/53e746d1e24c71328526c5c813559fc0557dd282) | โหลด schema ของ MCP tool เฉพาะเมื่อจะใช้ และเลือกจำกัดขนาด response แบบเรียกคืนได้ | MCP client/backend; Python package ต้อง >=3.11,<4 หรือ TypeScript/Rust SDK พร้อม native dependencies ตามแพ็ก. backend ต้องรองรับ legacy initialize; catalog คงที่ต่อ connection ไม่รองรับ dynamic subscriptions; schema lookup อาจเพิ่ม calls; output cache/raw recall ต้องคงขอบเขตสิทธิ์เดิม ยังไม่ทดสอบ integration |
 
 <a id="ai-application-sdks"></a>
 
@@ -82,3 +84,11 @@ These are executable tools and frameworks, counted separately from agent skills.
 | Tool | ใช้ทำอะไร | ต้องมี / ข้อจำกัด |
 | --- | --- | --- |
 | [Vercel AI SDK](https://github.com/vercel/ai/tree/70e45d5878494be4b66e325187f865951025059e) | ต่อ text/streaming, structured outputs, tools และ UI สำหรับแอป TypeScript | Node 22+ ตาม README ที่อ่าน, provider adapter หรือ gateway และ UI integration ตามงาน. String model ID อาจเลือก Vercel AI Gateway; adapter โดยตรงเป็นอีกเส้นทาง ต้องบันทึก provider/billing route |
+
+<a id="context-efficiency"></a>
+
+## Context efficiency
+
+| Tool | ใช้ทำอะไร | ต้องมี / ข้อจำกัด |
+| --- | --- | --- |
+| [RTK (OSS filters)](https://github.com/rtk-ai/rtk/tree/8bb6096b773546547d7704f9a8683ea9719a5017) | กรอง output ของ git/test/lint ก่อนเข้า context ของ coding agent | เลือก rtk-oss binary ให้ตรง OS/architecture และ client hooks; source build ระบุ Rust 1.91. เลือก rtk-oss (Apache-2.0); default engine และ proxy เป็น BUSL-1.1 แยก อย่าเหมารวม license ทั้ง repo; bytes/4 เป็นค่าประมาณ output ไม่ใช่ค่า API ทั้งงาน มี raw bypass/recall แต่ยังไม่ทดสอบ |

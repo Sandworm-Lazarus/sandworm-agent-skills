@@ -1,0 +1,44 @@
+{
+  "record_kind": "blank-operator-trial-template",
+  "schema_version": 1,
+  "upstream_runtime_tested": false,
+  "upstream": {
+    "repo": null,
+    "commit": null,
+    "edition": null
+  },
+  "environment": {
+    "client": null,
+    "runtime": null,
+    "backend_contract_sha256": null,
+    "tokenizer": null
+  },
+  "task": {
+    "id": null,
+    "acceptance_criteria": null,
+    "max_calls": null,
+    "max_retries": null,
+    "wall_deadline_seconds": null
+  },
+  "attempts": [],
+  "attempt_fields": {
+    "variant": null,
+    "success": null,
+    "completion_reason": null,
+    "provider_input_tokens": null,
+    "provider_output_tokens": null,
+    "cached_input_tokens": null,
+    "additional_provider_usage": null,
+    "tool_output_bytes": null,
+    "schema_bytes": null,
+    "lookup_calls": null,
+    "retries": null,
+    "wall_seconds": null,
+    "cost_usd": null,
+    "raw_recall_passed": null,
+    "policy_denial_preserved": null,
+    "private_evidence_location": null,
+    "missing_measurements_reason": null
+  },
+  "note": "Blank template, not a result or executable schema. Keep raw/private content out of shareable records; do not infer token usage from byte counts."
+}

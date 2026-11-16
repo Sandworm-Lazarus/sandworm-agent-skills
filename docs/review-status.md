@@ -2,15 +2,15 @@
 
 [Home](../README.md) · [Methodology](methodology.md)
 
-Snapshot: **2026-11-11** · `2026-11-11-mcp-typescript-privacy-sandworm-agent-skills`
+Snapshot: **2026-11-16** · `2026-11-16-context-efficiency-sandworm-agent-skills`
 
 | Measure | Count |
 | --- | ---: |
 | Skill entries | 13 |
 | Skill collections | 8 |
-| Companion tools | 18 |
-| Tool categories | 7 |
-| Source repositories | 26 |
+| Companion tools | 20 |
+| Tool categories | 8 |
+| Source repositories | 28 |
 | Entry-reviewed | 8 |
 | Entry-overview | 5 |
 | Runtime-tested upstream skills | 0 |

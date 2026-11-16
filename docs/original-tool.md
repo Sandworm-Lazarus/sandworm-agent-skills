@@ -6,6 +6,11 @@ review concepts into a small application policy that can be tested without an
 LLM, cloud account or external dependency. It does not wrap or claim to implement
 OPA, Cedar, MCP conformance, authentication or a tool executor.
 
+For a bounded context-efficiency experiment, see the original
+[trial guide](context-budget-trial.md) and its blank recording template. It explains
+why a compression wrapper must preserve the resolved backend policy decision;
+it does not claim an upstream integration has been tested.
+
 ## Quickstart
 
 From the repository or bundle root, run this one command with synthetic inputs:

@@ -20,6 +20,7 @@ Select a task, inspect the complete pinned package, then try a bounded synthetic
 | --- | --- | --- |
 | [Mem0](https://github.com/mem0ai/mem0/tree/f1791daa86d469249c9b002f62644d58a1eb96a0) | เพิ่ม memory layer ที่แยก user/session/agent context | Version, configuration, one task result, failure behavior and data/permission boundaries |
 | [Graphiti](https://github.com/getzep/graphiti/tree/ebef986a0b2360211b65751c111cacb4a7d790eb) | เก็บ entities, relationships และ facts ที่มีช่วงเวลาความถูกต้อง | Version, configuration, one task result, failure behavior and data/permission boundaries |
+| [RTK (OSS filters)](https://github.com/rtk-ai/rtk/tree/8bb6096b773546547d7704f9a8683ea9719a5017) | กรอง output ของ git/test/lint ก่อนเข้า context ของ coding agent | Version, configuration, one task result, failure behavior and data/permission boundaries |
 
 ## Choose a personal harness
 
@@ -45,6 +46,7 @@ Select a task, inspect the complete pinned package, then try a bounded synthetic
 | --- | --- | --- |
 | [MCP Inspector](https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23) | ตรวจและเรียก MCP servers ผ่าน web, CLI หรือ terminal interface | Version, configuration, one task result, failure behavior and data/permission boundaries |
 | [Vercel AI SDK](https://github.com/vercel/ai/tree/70e45d5878494be4b66e325187f865951025059e) | ต่อ text/streaming, structured outputs, tools และ UI สำหรับแอป TypeScript | Version, configuration, one task result, failure behavior and data/permission boundaries |
+| [MCP Compressor](https://github.com/atlassian-labs/mcp-compressor/tree/53e746d1e24c71328526c5c813559fc0557dd282) | โหลด schema ของ MCP tool เฉพาะเมื่อจะใช้ และเลือกจำกัดขนาด response แบบเรียกคืนได้ | Version, configuration, one task result, failure behavior and data/permission boundaries |
 
 ## Skill starting points
 

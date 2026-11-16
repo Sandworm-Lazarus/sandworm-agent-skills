@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/banner.svg" alt="Sandworm Agent Skills" width="100%"></p>
 
-<p align="center"><b>13 skill entries · 18 tools · 26 source repositories</b></p>
+<p align="center"><b>13 skill entries · 20 tools · 28 source repositories</b></p>
 
 # Sandworm Agent Skills
 
@@ -32,8 +32,9 @@ python3 -m unittest discover -s tests -v
 | Agent memory | 2 |
 | Browser automation | 3 |
 | Voice & audio | 4 |
-| MCP development | 1 |
+| MCP development | 2 |
 | AI application SDKs | 1 |
+| Context efficiency | 1 |
 
 ## Use the collection
 
